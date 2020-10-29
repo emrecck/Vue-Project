@@ -2,6 +2,7 @@
     <div class="box col-s-12 bg-danger">
         <h2>alahdslas</h2>
         <h1>Resul BABA</h1>
+        <h1>Emre BABA</h1>
     </div>
 </template>
 
