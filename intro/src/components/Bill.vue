@@ -1,14 +1,11 @@
 <template>
     <div class="box col-s-12 bg-danger">
-        <h2>alahdslas</h2>
-        <h1>Resul BABA</h1>
-        <h1>Emre BABA</h1>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Bill',
   props: {
     
   }
@@ -21,3 +18,4 @@ export default {
   height:50px;
 }
 </style>
+
