@@ -1,8 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
+<<<<<<< HEAD
       <router-link to="/">Cart</router-link> |
       <router-link to="/about">About</router-link>
+=======
+      <router-link to="/">BillView</router-link> | 
+      <router-link to="/cartview">CartView</router-link>
+>>>>>>> 39368673888717d1b0fea344aa090a044866d0e6
     </div>
     <router-view/>
   </div>
