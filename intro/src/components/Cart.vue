@@ -1,5 +1,7 @@
 <template>
     <div class="box col-s-12 bg-danger">
+      <h1>dsdsdss</h1>
+    </div>
 </template>
 
 <script>
