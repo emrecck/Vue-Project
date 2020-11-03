@@ -2,10 +2,11 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">BillView</router-link> | 
-      <router-link to="/cartview">CartView</router-link>
-      <router-link to="/signinview">SignInView</router-link>
-      <router-link to="/signupview">SignUpView</router-link>
-      <router-link to="/sliderview">SliderView</router-link>
+      <router-link to="/cartview">CartView</router-link> |
+      <router-link to="/signinview">SignInView</router-link> |
+      <router-link to="/signupview">SignUpView</router-link> |
+      <router-link to="/sliderview">SliderView</router-link> |
+          <router-link to="/headerview">HeaderView</router-link>
     </div>
     <router-view/>
   </div>
