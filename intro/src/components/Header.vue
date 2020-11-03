@@ -85,20 +85,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-*{
-    box-sizing: border-box;
-    font-family:'Grandstander', cursive,sans-serif  ;
-}
-html{
-    font-size: 10px;
-    margin:0;
-    padding: 0;
-}
-body{
-    
-    color:#333;
-    text-align:center;
-}
 .banner{
     display: block;
 }
@@ -235,7 +221,10 @@ body{
     width: 15px;
     height: 15px;
 }
-
+.kategoriler{
+    position: fixed;
+    top: 0;
+}
 .anasayfa{
    
     background: url(../assets/images/banner/kategori/anasayfa.png) no-repeat center;
