@@ -43,11 +43,11 @@
                         <a href="https://www.hasanbey.com/tr/"><img src="../assets/images/banner/logo.png"></a>
                     </div>
     
-                     <div class="arama-bar">
-                        <div class="bar">
+                     <div class="arama-bar row">
+                        <div class="bar col px-0">
                             <input type="text" placeholder="Yumurta, Domates, Süt...">
                         </div>
-                        <div class="buton">
+                        <div class="buton col px-0">
                             <button type="button"><img src="../assets/images/banner/red_magnifier_icon.png"></button>
                         </div>
                     </div> 
@@ -209,8 +209,8 @@ body{
     position: absolute;
     right: 30px;
     top:50px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    /* display: grid;
+    grid-template-columns: 3fr 1fr; */
 }
 .bar input{
     width: 230px;
@@ -228,10 +228,10 @@ body{
     border: 0px;
     background-color: white;
     width: 30px;
-    height: 30px;
+    height: 27px;
 }
 .buton img{
-    margin-top: 2px;
+    max-width: 100%;
     width: 15px;
     height: 15px;
 }
