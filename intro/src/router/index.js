@@ -43,12 +43,21 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/SliderView.vue')
   },
   {
+<<<<<<< HEAD
     path: '/productview',
    name: 'ProductView',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/ProductView.vue')
+=======
+    path: '/headerview',
+   name: 'HeaderView',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/HeaderView.vue')
+>>>>>>> 72f4780d9fa1019b24c61fc143ef475368f5dc42
   }
   ]
 

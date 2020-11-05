@@ -2,17 +2,39 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">BillView</router-link> | 
+<<<<<<< HEAD
       <router-link to="/cartview">CartView</router-link>
       <router-link to="/signinview">SignInView</router-link>
       <router-link to="/signupview">SignUpView</router-link>
       <router-link to="/sliderview">SliderView</router-link>
       <router-link to="/productview">ProdutcView</router-link>
+=======
+      <router-link to="/cartview">CartView</router-link> |
+      <router-link to="/signinview">SignInView</router-link> |
+      <router-link to="/signupview">SignUpView</router-link> |
+      <router-link to="/sliderview">SliderView</router-link> |
+          <router-link to="/headerview">HeaderView</router-link>
+>>>>>>> 72f4780d9fa1019b24c61fc143ef475368f5dc42
     </div>
     <router-view/>
   </div>
 </template>
 
 <style>
+*{
+    box-sizing: border-box;
+    font-family:'Grandstander', cursive,sans-serif  ;
+}
+html{
+    font-size: 10px;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #fffcf9 !important;
+    color:#333;
+    text-align:center;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,7 +44,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 100px 0;
 }
 
 #nav a {
