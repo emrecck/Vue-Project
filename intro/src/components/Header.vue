@@ -221,10 +221,9 @@ export default {
     width: 15px;
     height: 15px;
 }
-.kategoriler{
-    position: fixed;
-    top: 0;
-}
+/* .kategoriler{
+
+} */
 .anasayfa{
    
     background: url(../assets/images/banner/kategori/anasayfa.png) no-repeat center;
