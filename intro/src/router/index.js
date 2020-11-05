@@ -4,61 +4,68 @@ import BillView from '../views/BillView.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
+const routes = [{
     path: '/',
     name: 'BillView',
     component: BillView
   },
-   {
-     path: '/cartview',
+  {
+    path: '/cartview',
     name: 'CartView',
-     // route level code-splitting
-     // this generates a separate chunk (about.[hash].js) for this route
-     // which is lazy-loaded when the route is visited.
-     component: () => import(/* webpackChunkName: "about" */ '../views/CartView.vue')
-   },
-   {
-    path: '/signinview',
-   name: 'SignInView',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/SignInView.vue')
+    component: () => import( /* webpackChunkName: "about" */ '../views/CartView.vue')
+  },
+  {
+    path: '/signinview',
+    name: 'SignInView',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import( /* webpackChunkName: "about" */ '../views/SignInView.vue')
   },
   {
     path: '/signupview',
-   name: 'SignUpView',
+    name: 'SignUpView',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/SignUpView.vue')
+    component: () => import( /* webpackChunkName: "about" */ '../views/SignUpView.vue')
   },
   {
     path: '/sliderview',
-   name: 'SliderView',
+    name: 'SliderView',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/SliderView.vue')
+    component: () => import( /* webpackChunkName: "about" */ '../views/SliderView.vue')
   },
   {
     path: '/headerview',
-   name: 'HeaderView',
+    name: 'HeaderView',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/HeaderView.vue')
+    component: () => import( /* webpackChunkName: "about" */ '../views/HeaderView.vue')
   },
   {
     path: '/productsView',
-   name: 'ProductsView',
+    name: 'ProductsView',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/ProductsView.vue')
+    component: () => import( /* webpackChunkName: "about" */ '../views/ProductsView.vue')
+  },
+  {
+    path: '/menuview',
+    name: 'MenuView',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import( /* webpackChunkName: "about" */ '../views/MenuView.vue')
   }
-  ]
+]
 
 const router = new VueRouter({
   routes
