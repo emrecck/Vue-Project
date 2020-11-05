@@ -222,8 +222,7 @@ export default {
     height: 15px;
 }
 .kategoriler{
-    position: fixed;
-    top: 0;
+   
 }
 .anasayfa{
    
