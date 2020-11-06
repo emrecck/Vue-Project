@@ -11,9 +11,7 @@
             <div class="col-sm-12 px-0 urun">
               <div class="col-sm-12 p-0">
                 <a href="#">
-                  <img
-                    v-bind:src= "item.imgSource"
-                  />
+                  <img src= "item.imgSource" />
                 </a>
               </div>
 
@@ -62,49 +60,49 @@ export default {
         },
         {
           id: 1,
-          imgSource: "images/ürünler/0001227_dolgulu-yesil-zeytin-sarimsakli-kekikli-500-gr_500.jpeg",
+          imgSource: '../assets/images/ürünler/0001227_dolgulu-yesil-zeytin-sarimsakli-kekikli-500-gr_500.jpeg',
           name: "Doğal Yumurta",
           subName:"60 Adet Doğal Köy Yumurtası",
           cost: "15",
         },
         {
           id: 2,
-          imgSource: "images/ürünler/0001225_gurme-paketi_500.jpeg",
+          imgSource: "../assets/images/ürünler/0001225_gurme-paketi_500.jpeg",
           name: "Doğal Yumurta",
           subName:"60 Adet Doğal Köy Yumurtası",
           cost: "15",
         },
         {
           id: 3,
-          imgSource: "images/ürünler/0000981_dolmalik-biber_500.png",
+          imgSource: "../assets/images/ürünler/0000981_dolmalik-biber_500.png",
           name: "Doğal Yumurta",
           subName:"60 Adet Doğal Köy Yumurtası",
           cost: "15",
         },
         {
           id: 4,
-          imgSource: "images/ürünler/0001081_dogal-ev-yapimi-pekmez-armut-450-gr_500.png",
+          imgSource: "../assets/images/ürünler/0001081_dogal-ev-yapimi-pekmez-armut-450-gr_500.png",
           name: "Doğal Yumurta",
           subName:"60 Adet Doğal Köy Yumurtası",
           cost: "15",
         },
          {
           id: 5,
-          imgSource: "images/ürünler/0001161_patlican_500.png",
+          imgSource: "../assets/images/ürünler/0001161_patlican_500.png",
           name: "Doğal Yumurta",
           subName:"60 Adet Doğal Köy Yumurtası",
           cost: "15",
         },
          {
           id: 6,
-          imgSource: "images/ürünler/0001103_dogal-domates-suyu-1365-gr_500.png",
+          imgSource: "../assets/images/ürünler/0001103_dogal-domates-suyu-1365-gr_500.png",
           name: "Doğal Yumurta",
           subName:"60 Adet Doğal Köy Yumurtası",
           cost: "15",
         },
          {
           id: 7,
-          imgSource: "images/ürünler/0001236_yayik-tereyagi-500-gr_500.jpeg",
+          imgSource: "../assets/images/ürünler/0001236_yayik-tereyagi-500-gr_500.jpeg",
           name: "Doğal Yumurta",
           subName:"60 Adet Doğal Köy Yumurtası",
           cost: "15",
