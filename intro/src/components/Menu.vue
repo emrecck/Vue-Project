@@ -4,19 +4,19 @@
       <div>
         <div>
           <ul class="side_category_menu">
-            <li><a href="https://www.hasanbey.com/tr/aile-boyu">Aile Boyu</a></li>
-            <li><a href="https://www.hasanbey.com/tr/tum-urunler">Tüm Ürünler</a></li>
-            <li><a href="https://www.hasanbey.com/tr/domates-biber">Sebze & Meyve</a></li>
-            <li><a href="https://www.hasanbey.com/tr/sut-peynir">Süt & Peynir</a></li>
-            <li><a href="https://www.hasanbey.com/tr/yumurta">Yumurta & Sucuk</a></li>
-            <li><a href="https://www.hasanbey.com/tr/salca-tursu">Salça & Turşu</a></li>
-            <li><a href="https://www.hasanbey.com/tr/zeytin-zeytinyagi">Zeytin & Zeytinyağı</a></li>
-            <li><a href="https://www.hasanbey.com/tr/recel-bal">Reçel & Bal</a></li>
-            <li><a href="https://www.hasanbey.com/tr/sebzeler">Sebzeler</a></li>
-            <li><a href="https://www.hasanbey.com/tr/ekmek">Ekmek</a></li>
-            <li><a href="https://www.hasanbey.com/tr/meyveler">Meyveler</a></li>
-            <li><a href="https://www.hasanbey.com/tr/hediye-paketleri">Hediye Paketleri</a></li>
-            <li><a href="https://www.hasanbey.com/tr/paketler">Paketler</a></li>
+            <li v-for="item in list" v-bind:key="item.id"><a href="#">{{ item.name }}</a></li>
+            <!-- <li><a href="#">Tüm Ürünler</a></li>
+            <li><a href="#">Sebze & Meyve</a></li>
+            <li><a href="#">Süt & Peynir</a></li>
+            <li><a href="#">Yumurta & Sucuk</a></li>
+            <li><a href="#">Salça & Turşu</a></li>
+            <li><a href="#">Zeytin & Zeytinyağı</a></li>
+            <li><a href="#">Reçel & Bal</a></li>
+            <li><a href="#">Sebzeler</a></li>
+            <li><a href="#">Ekmek</a></li>
+            <li><a href="#">Meyveler</a></li>
+            <li><a href="#">Hediye Paketleri</a></li>
+            <li><a href="#">Paketler</a></li> -->
           </ul>
         </div>
       </div>
@@ -28,6 +28,65 @@
 export default {
   name: "Navbar",
   props: {},
+  data() {
+    return{
+      list:[
+        {
+          id:0,
+          name:"Aile Boyu"
+        },
+        {
+          id:1,
+          name:"Tüm Ürünler"
+        },
+        {
+          id:2,
+          name:"Sebze & Meyve"
+        },
+        {
+          id:3,
+          name:"Süt & Peynir"
+        },
+        {
+          id:4,
+          name:"Yumurta & Sucuk"
+        },
+        {
+          id:5,
+          name:"Salça & Turşu"
+        },
+        {
+          id:6,
+          name:"Zeytin & Zeytinyağı"
+        },
+        {
+          id:7,
+          name:"Reçel & Bal"
+        },
+        {
+          id:8,
+          name:"Sebzeler"
+        },
+        {
+          id:9,
+          name:"Ekmek"
+        },
+        
+        {
+          id:10,
+          name:"Meyveler"
+        },
+        {
+          id:11,
+          name:"Hediye Paketleri"
+        },
+        {
+          id:12,
+          name:"Paketler"
+        }
+      ]
+    }
+  }
 };
 </script>
 

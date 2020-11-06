@@ -37,7 +37,7 @@
 
 
         <div class="bottom-banner col-sm-12">
-                <div class="container temp">
+                <div class="container pb-2 temp">
 
                     <div class="col-sm-12 logo d-flex justify-content-center pt-5">
                         <a href="https://www.hasanbey.com/tr/"><img src="../assets/images/banner/logo.png"></a>
@@ -53,7 +53,7 @@
                     </div> 
     
                 </div>
-                <nav class="kategoriler ">
+                <!-- <nav class="kategoriler ">
                     <div class="container ">
                         <ul class="nav d-flex justify-content-around my-5">
                             <li class="nav-items"><a class="" href="#"><div class="anasayfa"></div></a></li>
@@ -67,7 +67,7 @@
                             <li class="nav-items mt-2"><a class="" href="#"><div class="recel-bal"></div></a></li>
                         </ul>
                     </div>
-                </nav>
+                </nav> -->
         </div>
 
 

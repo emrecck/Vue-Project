@@ -11,19 +11,19 @@
             <div class="col-sm-12 px-0 urun">
               <div class="col-sm-12 p-0">
                 <a href="#">
-                  <img src= "item.imgSource" />
+                  <img v-bind:src= "item.imgSource" />
                 </a>
               </div>
 
               <div class="col-sm-12 pt-3 px-0">
-                <h3 class="urun-isim">{{ item.name }}</h3>
-                <h5 class="urun-alt-isim">{{ item.subName }}</h5>
+                <h3 class="urun-isim text-left">{{ item.name }}</h3>
+                <h5 class="urun-alt-isim text-left">{{ item.subName }}</h5>
               </div>
 
               <div class="fiyat-at-sepete clearfix">
                 <div class="row">
                   <div class="col-sm-6">
-                    <h3 class="urun-fiyat">{{ item.cost }} TL</h3>
+                    <h3 class="urun-fiyat text-left">{{ item.cost }} TL</h3>
                   </div>
                   <div class="col-sm-2"></div>
                   <a onclick="pop()" class="col-sm-4 at-sepete-buton">
@@ -221,10 +221,8 @@ export default {
 
 .urun-alt-isim{
 
-    margin-top: -0.3px;
-    margin-left: 6px;
     text-overflow: ellipsis;
     color: #737373;
-    font-size: 13.5px;
+    font-size: 1.35rem;
 }
 </style>

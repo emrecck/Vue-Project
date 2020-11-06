@@ -9,7 +9,8 @@
       <router-link to="/headerview">HeaderView</router-link> |
       <router-link to="/productsview">ProductsView</router-link> |
        <router-link to="/productview">ProductView</router-link> |
-      <router-link to="/menuview">MenuView</router-link>
+      <router-link to="/menuview">MenuView</router-link> |
+      <router-link to="/navbarview">NavbarView</router-link>
     </div>
     <router-view />
   </div>
