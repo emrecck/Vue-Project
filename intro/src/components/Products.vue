@@ -11,7 +11,7 @@
             <div class="col-sm-12 px-0 urun">
               <div class="col-sm-12 p-0">
                 <a href="#">
-                  <img src= "item.imgSource" />
+                  <img src= "item.imgSource" v-bind:key="item.id"/>
                 </a>
               </div>
 
