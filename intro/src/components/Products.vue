@@ -11,11 +11,7 @@
             <div class="col-sm-12 px-0 urun">
               <div class="col-sm-12 p-0">
                 <a href="#">
-<<<<<<< HEAD
-                  <img src= "item.imgSource" v-bind:key="item.id"/>
-=======
                   <img v-bind:src= "item.imgSource" />
->>>>>>> a6e0f4af41de4c6db06fb178ff8970a196b2f1ed
                 </a>
               </div>
 
@@ -104,7 +100,7 @@ export default {
           subName:"60 Adet Doğal Köy Yumurtası",
           cost: "15",
         },
-         {
+        {
           id: 7,
           imgSource: "../assets/images/ürünler/0001236_yayik-tereyagi-500-gr_500.jpeg",
           name: "Doğal Yumurta",
