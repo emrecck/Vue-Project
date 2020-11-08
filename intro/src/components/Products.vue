@@ -100,7 +100,7 @@ export default {
           subName:"60 Adet Doğal Köy Yumurtası",
           cost: "15",
         },
-         {
+        {
           id: 7,
           imgSource: "../assets/images/ürünler/0001236_yayik-tereyagi-500-gr_500.jpeg",
           name: "Doğal Yumurta",
