@@ -5,18 +5,20 @@
     <slide class="slide"><img class="images" src="../assets/images/Hasanbeycom_banner-33-.jpg" alt=""/></slide>
     <slide class="slide"><img class="images" src="../assets/images/gunluk_koy_yumurta-27-.jpg" alt=""/></slide>
     
+    <hooper-navigation slot="hooper-addons"></hooper-navigation>
   </hooper>
 </template>
 
 <script>
-import { Hooper, Slide } from "hooper";
+import { Hooper, Slide, Navigation as HooperNavigation } from "hooper";
 import 'hooper/dist/hooper.css';
 
 export default {
   name: "App",
   components: {
     Hooper,
-    Slide
+    Slide,
+    HooperNavigation
   }
 };
 </script>
