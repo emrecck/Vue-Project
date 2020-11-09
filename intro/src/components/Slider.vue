@@ -4,24 +4,16 @@
       <div class="slider-1">
         <div class="slider-1-content">
           <div class="slider-1-item">
-            <a href="https://www.hasanbey.com/tr/domates-biber"
-              ><img src="../assets/images/Hasanbeycom_banner-33-.jpg" alt=""
-            /></a>
+            <a href="#"><img src="../assets/images/banner150-137-.jpg" alt=""/></a>
           </div>
           <div class="slider-1-item">
-            <a href="https://www.hasanbey.com/tr/domates-biber"
-              ><img src="../assets/images/sokaBanner-124-.jpg" alt=""
-            /></a>
+            <a href="#"><img src="../assets/images/sutbanner-136-.jpg" alt=""/></a>
           </div>
           <div class="slider-1-item">
-            <a href="https://www.hasanbey.com/tr/domates-biber"
-              ><img src="../assets/images/gunluk_koy_yumurta-27-.jpg" alt=""
-            /></a>
+            <a href="#"><img src="../assets/images/Hasanbeycom_banner-33-.jpg" alt=""/></a>
           </div>
           <div class="slider-1-item">
-            <a href="https://www.hasanbey.com/tr/domates-biber"
-              ><img src="../assets/images/karpuz_banner-126-.jpg" alt=""
-            /></a>
+            <a href="#"><img src="../assets/images/gunluk_koy_yumurta-27-.jpg" alt=""/></a>
           </div>
         </div>
       </div>
