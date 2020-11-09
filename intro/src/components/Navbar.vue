@@ -31,6 +31,9 @@
             <li class="nav-items mt-2">
               <a class="" href="#"><div class="recel-bal"></div></a>
             </li>
+            <li class="nav-items mt-2">
+              <a class="" href="#"><div class="ekmek"></div></a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -139,6 +142,16 @@ export default {
   width: 80px;
 }
 
+.ekmek {
+  background: url(../assets/images/banner/kategori/ekmek.png) no-repeat
+  center;
+  background-size: contain;
+  background-color: transparent;
+  max-width: 100%;
+  height: 50px;
+  width: 80px;
+}
+
 .anasayfa:hover {
   background: url(../assets/images/banner/kategori/anasayfa-1.png) no-repeat
     center;
@@ -223,6 +236,16 @@ export default {
 .recel-bal:hover {
   background: url(../assets/images/banner/kategori/recel-bal-1.png) no-repeat
     center;
+  background-size: contain;
+  background-color: transparent;
+  max-width: 100%;
+  height: 50px;
+  width: 80px;
+}
+
+.ekmek:hover {
+  background: url(../assets/images/banner/kategori/ekmek-1.png) no-repeat
+  center;
   background-size: contain;
   background-color: transparent;
   max-width: 100%;
