@@ -1,121 +1,119 @@
 <template>
-  <body>
-    <div class="main">
-      <div class="inner-main">
-        <div class="uye-olun">
-          <h2 class="uye-olun-baslik-1">Üye Olun</h2>
-          <div class="uye-olun-img">
-            <img src="../assets/images/uye-olun/brown_line.png" /><br /><br /><br /><br />
-          </div>
-          <h4 class="uye-olun-baslik-2">Kişisel Bilgilerim</h4>
+  <div class="main">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-xs-12 col-md-5 pt-5">
+          <div class="uye-olun">
+            <h2 class="uye-olun-baslik-1">Üye Olun</h2>
+            <h4 class="uye-olun-baslik-2 py-3">Kişisel Bilgilerim</h4>
 
-          <div class="uye-olun-kart">
-            <form id="myform">
-              <div class="inputlar">
-                <label for="FirstName">Adı:</label><br />
-                <input type="text" name="f-name" id="f-nameID" required />
-                <br />
-                <span class="required-1">*</span><br />
-              </div>
-
-              <div class="inputlar">
-                <label for="LastName">Soyadı:</label><br />
-                <input type="text" required />
-                <br /><br />
-                <span class="required-2">*</span>
-              </div>
-
-              <div class="inputlar" id="myform">
-                <label for="Email">E-Posta Adresi:</label><br />
-                <input type="text" required />
-                <br /><br />
-                <span class="required-3">*</span>
-              </div>
-
-              <div class="sifre">
+            <div class="uye-olun-kart">
+              <form id="myform">
                 <div class="inputlar">
-                  <label for="Password">Şifre:</label><br />
-                  <input type="password" required />
-                  <br /><br />
-                  <span class="required-4">*</span>
+                  <label for="FirstName">Adı:</label>
+                  <input type="text" name="f-name" id="f-nameID" required />
+                  <span class="required-1">*</span>
                 </div>
 
                 <div class="inputlar">
-                  <label for="ConfirmPassword">Şifre (tekrar):</label><br />
-                  <input type="password" required />
-                  <br /><br />
-                  <span class="required-5">*</span>
+                  <label for="LastName">Soyadı:</label>
+                  <input type="text" required />
+                  <span class="required-1">*</span>
                 </div>
-              </div>
 
-              <div class="en-alt">
-                <input type="checkbox" required />
-                <label for="Newsletter">Beni haber grubuna ekle</label>
+                <div class="inputlar" id="myform">
+                  <label for="Email">E-Posta Adresi:</label>
+                  <input type="text" required />
+                  <span class="required-1">*</span>
+                </div>
 
-                <br /><br />
+                <div class="sifre">
+                  <div class="inputlar">
+                    <label for="Password">Şifre:</label>
+                    <input type="password" required />
+                    <span class="required-1">*</span>
+                  </div>
 
-                <input type="checkbox" required />
-                <span
-                  >Kişisel Verilerin Korunması -
-                  <span style="text-decoration: underline"
-                    >Aydınlatma Metnini</span
-                  > </span
-                ><br />
-                <span>Onaylıyorum</span>
+                  <div class="inputlar">
+                    <label for="ConfirmPassword">Şifre (tekrar):</label>
+                    <input type="password" required />
+                    <span class="required-1">*</span>
+                  </div>
+                </div>
 
-                <br /><br /><br />
-
-                <input type="checkbox" required />
-                <label for="accept-privacy-policy"
-                  >Gizlilik koşullarını okudum.</label
-                >
-                <span>Kabul ediyorum.</span>
-
-                <br /><br /><br />
-
-                <input
-                  type="submit"
-                  id="register-button"
-                  class="uye-olun-buton"
-                  value="Kaydet"
-                  name="register-button"
-                  form="myform"
-                />
-              </div>
-            </form>
+                <div class="en-alt text-left pt-5">
+                  <div>
+                    <input type="checkbox" required />
+                    <label for="Newsletter">Beni haber grubuna ekle</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" required />
+                    <span>
+                      Kişisel Verilerin Korunması -
+                      <span style="text-decoration: underline"
+                        >Aydınlatma Metnini</span
+                      >
+                    </span>
+                    <span>Onaylıyorum</span>
+                  </div>
+                  <div class="pt-5">
+                    <input type="checkbox" required />
+                    <label for="accept-privacy-policy"
+                      >Gizlilik koşullarını okudum.</label
+                    >
+                    <span>Kabul ediyorum.</span>
+                  </div>
+                  <div class="text-center py-5">
+                      <input
+                    type="submit"
+                    id="register-button"
+                    class="uye-olun-buton col-sm-9"
+                    value="Kaydet"
+                    name="register-button"
+                    form="myform"
+                  />
+                  </div>
+                
+                </div>
+              </form>
+            </div>
           </div>
         </div>
+        <div class="col-xs-12 col-md-7 pt-5">
+          <div class="zaten-uye-misin">
+            <div class="zaten-uye-misin-kart">
 
-        <div class="zaten-uye-misin">
-          <div class="zaten-uye-misin-kart">
-            <div class="zaten-uye-misin-bilgi">
-              <h3>Hasanbey.com'a üye olduğunuzda;</h3>
-              <p>
-                Siparişlerinizin durumunu takip edebilir,<br />
-                üyelerimize özel kampanya ve indirimlerden yararlanabilirsiniz.
-              </p>
-              <p>
-                Ayrıca indirim, yeni sezon mahsulleri ve kampanyalardan
-                e-bülten<br />
-                yoluyla öncelikli olarak haberdar olabilirsiniz.
-              </p>
-            </div>
+              <div class="zaten-uye-misin-bilgi">
+                <h2>Hasanbey.com'a üye olduğunuzda;</h2>
+                <p>
+                  Siparişlerinizin durumunu takip edebilir,<br />
+                  üyelerimize özel kampanya ve indirimlerden
+                  yararlanabilirsiniz.
+                </p>
+                <p>
+                  Ayrıca indirim, yeni sezon mahsulleri ve kampanyalardan
+                  e-bülten<br />
+                  yoluyla öncelikli olarak haberdar olabilirsiniz.
+                </p>
+              </div>
 
-            <div class="zaten-uye-misin-img">
-              <img src="../assets/images/uye-olun/register_icons.png" />
-            </div>
+              <div class="zaten-uye-misin-img">
+                <img src="../assets/images/uye-olun/register_icons.png" />
+              </div>
 
-            <div class="zaten-uye-misin-buton">
-              <h4>Zaten üye misiniz?</h4>
-              <a href="uye-girisi-page.html">
-                <input class="giris-yap" type="button" value="Giriş Yap >" />
-              </a>
+              <div class="zaten-uye-misin-buton text-center py-5">
+                <h4>Zaten üye misiniz?</h4>
+                <a href="uye-girisi-page.html">
+                  <input class="giris-yap col-md-4 col-sm-4" type="button" value="Giriş Yap >" />
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
 </template>
 
 <script>
@@ -127,216 +125,151 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-.main{
-    margin-top: -40px;
-    margin-left: -5px;
-    margin-right: -10px;
-    height: 1100px;
-    margin-bottom: -100px;
-  
-    background: url(../assets/images/uye-olun/login_bg.jpg) no-repeat left;
-    background-size: 2000px;
+.main {
+  background: url(../assets/images/uye-olun/login_bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.uye-olun {
+  background-color: #fff;
+  position: relative;
 }
 
-.inner-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 1200px;
-    margin-left: 100px;
-    margin-right: 100px;
+.zaten-uye-misin {
+  padding: 0 30px;
 }
 
-.uye-olun{
-    margin-top: 140px;
-    margin-left: 100px;
-    height: 800px;
-    width: 445px;
-    background-color: #fff;
-    display: inline-block;
-    position: relative;
+.zaten-uye-misin-kart {
+  background-color: #fff;
+  position: relative;
+  padding: 50px 70px;
 }
 
-.zaten-uye-misin{
-    margin-left: 60px ;
-    margin-top: 140px;
-    width: 624px;
-    height: 520px;
-    background-color: #fff;
-    display: inline-block;
-    position: relative;
+.zaten-uye-misin-bilgi h2 {
+  font-size: 2.5rem;
+  color: #d53235;
+  text-align: left;
+  font-weight: bold;
 }
 
-.zaten-uye-misin-kart{
-    margin-left: 80px;
-    margin-top: 35px;
-    display: grid;
-    grid-template-rows: 2fr 1fr 1fr;
+.zaten-uye-misin-bilgi p {
+  font-family: Georgia, sans-serif;
+  color: #886f5d;
+  text-align: left;
+  font-size: 1.4rem;
+  margin: 25px 0;
 }
 
-.zaten-uye-misin-bilgi h3{
-    font-size: 30px;
-    color: #d53235;
+.zaten-uye-misin-img img {
+  width: 100%;
 }
 
-.zaten-uye-misin-bilgi p{
-    font-family: Georgia,sans-serif;
-    color: #886f5d;
-    text-align: left;
-    font-size: 14px;
+.zaten-uye-misin-buton h4 {
+  font-size: 1.8rem;
+  color: #b76f3b;
 }
 
-.zaten-uye-misin-img img{
-    margin-top: 20px;
-    width: 400px;
+.giris-yap {
+  cursor: pointer;
+  background: #de454b;
+  border: 0px;
+  height: 50px;
+  color: #fff !important;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
-.zaten-uye-misin-buton h4{
-    margin-top: 10px;
-    margin-left: 140px;
-    font-size: 18px;
-    color: #b76f3b;
+.giris-yap:hover {
+  background: #bf3b3f;
+  transition: background-color .3s ease-out 0s;
 }
 
-.giris-yap{
-    cursor: pointer;
-    background: #de454b;
-    border: 0px;
-    margin-left: 140px;
-    width: 160px;
-    height: 50px;
-    color: #fff!important;
-    font-family: kg_turning_tablesregular,sans-serif;
+.uye-olun-baslik-1 {
+  color: #b76f3b;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.uye-olun-baslik-1::after {
+  content: "";
+  background: url(../assets/images/uye-olun/brown_line.png) no-repeat;
+  widows: 204px;
+  height: 4px;
+  display: block;
+  margin: 10px 0px 0 120px;
+}
+.uye-olun-baslik-2 {
+  color: #b76f3b;
+  font-weight: bold;
 }
 
-.giris-yap:hover{
-    background: #bf3b3f;; 
-    border: 0px;
-    margin-left: 140px;
-    width: 160px;
-    height: 50px;
-    color: #fff!important;
-    font-family: kg_turning_tablesregular,sans-serif;
+.uye-olun-kart {
+  padding: 0 50px 0 50px;
+}
+.inputlar {
+  position: relative;
+}
+.inputlar label {
+  display: block;
+  color: rgb(213, 50, 53);
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.8rem;
+  max-width: 100%;
+  margin-top: 18px;
+  margin-bottom: 10px;
 }
 
-.uye-olun-baslik-1{
-    color: #b76f3b;
-    margin-top: -40px;
-    margin-left: 160px;
+.inputlar input {
+  background-color: rgb(234, 230, 220);
+  box-shadow: rgba(0, 0, 0, 0.03) 2px 3.464px 0px 0px inset;
+  width: 100%;
+  height: 42px;
+  color: #836957;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 2px;
+  border: 0px;
+  padding: 8px;
+  font-size: 1.4rem;
 }
 
-.uye-olun-img{
-    margin-top: -20px;
-    margin-left: 100px;
+.required-1 {
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: rgb(0, 0, 0);
+}
+.en-alt label {
+  font-weight: 100;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #886f5d !important;
+  font-size: 1.3rem;
 }
 
-.uye-olun-baslik-2{
-    color: #b76f3b;
-    margin-top: -40px;
-    margin-left: 150px;
+.en-alt span {
+  font-weight: 100;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #886f5d !important;
+  font-size: 1.3rem;
+}
+.en-alt div input{
+  margin-right: 10px;
+}
+.uye-olun-buton {
+  cursor: pointer;
+  background: #73a12e;
+  border: 0;
+  height: 46px;
+  color: #fff;
+  font-size: 1.8rem;
 }
 
-.uye-olun-kart{
-    margin-top: 25px;
-    margin-left: 70px;
+.uye-olun-buton:hover {
+  background: #62802a;
+  transition: background-color .3s ease-out ;
 }
-
-.inputlar label{
-    display: block;
-    font-family: kg_turning_tablesregular, sans-serif;
-    color: rgb(213, 50, 53);
-    text-align: left;
-    font-weight: bold;
-}
-
-.inputlar input{
-    background-color: rgb(234, 230, 220);
-    box-shadow: rgba(0, 0, 0, 0.03) 2px 3.464px 0px 0px inset;
-    width: 290px;
-    height: 25px;
-    color: rgb(131, 105, 87);
-    font-family: Georgia, "Times New Roman", Times, serif;
-    border-radius: 2px;
-    border-width: 0px;
-    border-style: initial;
-    border-color: initial;
-    border-image: initial;
-    padding: 8px;
-}
-
-.required-1{
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    top: 70px;
-    right: 70px;
-    color: rgb(0, 0, 0);
-}
-.required-2{
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    top: 165px;
-    right: 70px;
-    color: rgb(0, 0, 0);
-}
-.required-3{
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    top: 260px;
-    right: 70px;
-    color: rgb(0, 0, 0);
-}
-.required-4{
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    top: 355px;
-    right: 70px;
-    color: rgb(0, 0, 0);
-}
-.required-5{
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    top: 460px;
-    right: 70px;
-    color: rgb(0, 0, 0);
-}
-
-.en-alt label{
-    font-weight: 100;
-    font-family: Georgia,'Times New Roman',Times,serif;
-    color: #886f5d!important;
-    font-size: 13px;
-}
-
-.en-alt span{
-    font-weight: 100;
-    font-family: Georgia,'Times New Roman',Times,serif;
-    color: #886f5d!important;
-    font-size: 13px;
-}
-
-.uye-olun-buton{
-    cursor: pointer;
-    background: #73a12e;
-    border: 0;
-    width: 279px;
-    height: 46px;
-    color: #fff;
-    font-size: 15px;
-}
-
-.uye-olun-buton:hover{
-    cursor: pointer;
-    background: #62802a;
-    border: 0;
-    width: 279px;
-    height: 46px;
-    color: #fff;
-    font-size: 15px;
-}
-
 </style>

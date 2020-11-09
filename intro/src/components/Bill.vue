@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h4 class="row">Fatura Adresi</h4>
+    <h4 class="">Fatura Adresi</h4>
 
     <div class="personel-info-inner-container">
       <div class="personal-informations">
@@ -188,7 +188,6 @@ export default {
 
 .container{
   width: 500px;
-  height: 1000px;
 }
 
 h4{
