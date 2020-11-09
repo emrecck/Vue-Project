@@ -80,6 +80,14 @@ const routes = [{
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import( /* webpackChunkName: "about" */ '../views/NavbarView.vue')
+  },
+  {
+    path: '/hooperslideview',
+    name: 'HooperSlideView',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import( /* webpackChunkName: "about" */ '../views/HooperSlideView.vue')
   }
 ]
 
