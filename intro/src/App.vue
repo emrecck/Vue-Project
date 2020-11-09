@@ -6,7 +6,6 @@
       <router-link to="/signinview">SignInView</router-link> |
       <router-link to="/signupview">SignUpView</router-link> |
       <router-link to="/sliderview">SliderView</router-link> |
-      <router-link to="/hooperslideview">HooperSlideView</router-link> |
       <router-link to="/headerview">HeaderView</router-link> |
       <router-link to="/productsview">ProductsView</router-link> |
       <router-link to="/productview">ProductView</router-link> |

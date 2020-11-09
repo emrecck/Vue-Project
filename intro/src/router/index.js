@@ -34,14 +34,6 @@ const routes = [{
     component: () => import( /* webpackChunkName: "about" */ '../views/SignUpView.vue')
   },
   {
-    path: '/sliderview',
-    name: 'SliderView',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import( /* webpackChunkName: "about" */ '../views/SliderView.vue')
-  },
-  {
     path: '/headerview',
     name: 'HeaderView',
     // route level code-splitting
@@ -82,12 +74,12 @@ const routes = [{
     component: () => import( /* webpackChunkName: "about" */ '../views/NavbarView.vue')
   },
   {
-    path: '/hooperslideview',
-    name: 'HooperSlideView',
+    path: '/sliderview',
+    name: 'SliderView',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import( /* webpackChunkName: "about" */ '../views/HooperSlideView.vue')
+    component: () => import( /* webpackChunkName: "about" */ '../views/SliderView.vue')
   }
 ]
 
