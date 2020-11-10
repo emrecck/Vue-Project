@@ -18,11 +18,18 @@
                             Üye Girişi</a>
                     </div>
 
-                     <div class="col-xs-2 sepet">
+                     <div class="col-sm-2 sepet">
                         <div class="dropdown">
                             <button class="dropdown-buton">
+<<<<<<< HEAD
                                 <img src="../assets/images/banner/red_basket_icon.png" alt="">
                             </button>
+=======
+                                <img
+                                    src="../assets/images/banner/red_basket_icon.png" alt="">
+                            </button>
+
+>>>>>>> 5a632dc4d9aae14f3034b93193eb523c6f1f98f2
                         </div>
                     </div> 
                 </div>
@@ -123,14 +130,22 @@ export default {
     cursor: pointer;
     background: transparent;
     border: 0px;
-    height: 37px;
+    padding: 5px 10px;
 }
 
+<<<<<<< HEAD
+=======
+.dropdown-buton:hover{
+    cursor: pointer;
+    background: transparent;
+    border: 0px;
+}
+
+>>>>>>> 5a632dc4d9aae14f3034b93193eb523c6f1f98f2
 .dropdown-buton img{
-    margin-top: 6px;
-    margin-left: -11px;
     width: 25px;
 }
+<<<<<<< HEAD
 
 #drop-content{
     position: absolute;
@@ -150,6 +165,8 @@ export default {
     padding: 30px 90px;
 }
 
+=======
+>>>>>>> 5a632dc4d9aae14f3034b93193eb523c6f1f98f2
 .bottom-banner{
     background: url(../assets/images/banner/nav_bg.png);
 }
@@ -158,13 +175,11 @@ export default {
 }
 .arama-bar{
     position: absolute;
-    right: 30px;
+    right: 100px;
     top:50px;
-    /* display: grid;
-    grid-template-columns: 3fr 1fr; */
 }
 .bar input{
-    width: 230px;
+    width: 180px;
     height: 27px;
     border: 1px solid #eee;
     background: url(../assets/images/banner/search_input_bg.png);
@@ -186,5 +201,8 @@ export default {
     width: 15px;
     height: 15px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5a632dc4d9aae14f3034b93193eb523c6f1f98f2
 </style>

@@ -47,7 +47,7 @@
 <script>
 export default {
   name: "Products",
-  props: {},
+  props: {  },
   data() {
     return {
       list: [
