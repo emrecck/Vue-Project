@@ -21,15 +21,10 @@
                      <div class="col-sm-2 sepet">
                         <div class="dropdown">
                             <button class="dropdown-buton">
-<<<<<<< HEAD
-                                <img src="../assets/images/banner/red_basket_icon.png" alt="">
-                            </button>
-=======
                                 <img
                                     src="../assets/images/banner/red_basket_icon.png" alt="">
                             </button>
 
->>>>>>> 5a632dc4d9aae14f3034b93193eb523c6f1f98f2
                         </div>
                     </div> 
                 </div>
@@ -133,40 +128,15 @@ export default {
     padding: 5px 10px;
 }
 
-<<<<<<< HEAD
-=======
 .dropdown-buton:hover{
     cursor: pointer;
     background: transparent;
     border: 0px;
 }
 
->>>>>>> 5a632dc4d9aae14f3034b93193eb523c6f1f98f2
 .dropdown-buton img{
     width: 25px;
 }
-<<<<<<< HEAD
-
-#drop-content{
-    position: absolute;
-    z-index: 1;
-}
-
-#drop-content a{
-    cursor: text;
-    margin-top: -2px;
-    margin-left: -350px ;
-    display: block;
-    font-weight: bold;
-    font-size: 17px;
-    background: #fff;
-    color: black;
-    text-decoration: none;
-    padding: 30px 90px;
-}
-
-=======
->>>>>>> 5a632dc4d9aae14f3034b93193eb523c6f1f98f2
 .bottom-banner{
     background: url(../assets/images/banner/nav_bg.png);
 }
@@ -201,8 +171,4 @@ export default {
     width: 15px;
     height: 15px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 5a632dc4d9aae14f3034b93193eb523c6f1f98f2
 </style>
