@@ -30,11 +30,6 @@
                     <img src="../assets/images/banner/at_sepete_sprite.png" />
                   </a>
                 </div>
-
-                <div id="box">
-                  <h3>Ürün sepete eklendi !</h3>
-                  <a onclick="pop()" class="close">Kapat</a>
-                </div>
               </div>
             </div>
           </div>
@@ -126,12 +121,7 @@ export default {
     border-color: #d53235;
     transition: all .2s ease-out 0s;
 }
-.urun-isim{
 
-}
-.fiyat-at-sepete{
-
-}
 .urun-fiyat{
     font-size: 2.5rem;
     color: #d53235;
@@ -141,35 +131,10 @@ export default {
     border: 0px;
     background-color: transparent;
 }
-#box{
-    width: 500px;
-    height: 150px;
-    overflow: hidden;
-    background: #f1f1f1;
-    box-shadow: 0 0 20px black;
-    border-radius: 8px;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    text-align: center;
-    display: none;
-}
-
-.close{
-    font-size: 18px;
-    color: #d53235;
-    padding: 10px 30px;
-    cursor: pointer;
-    background: transparent;
-    display: inline-block;
-    border-radius: 4px;
-}
 
 .at-sepete-buton img{
     height: 36px;
-    width: 115px;
+    width: 180px;
 }
 
 .at-sepete-button{
@@ -183,11 +148,10 @@ export default {
 
 .at-sepete-button img{
     height: 36px;
-    width: 115px;
+    width: 180px;
 }
 
 .at-sepete-buton:active, .at-sepete-buton:focus{
-
     border: 0px;
 }
 
