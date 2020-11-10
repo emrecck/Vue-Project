@@ -18,16 +18,13 @@
                             Üye Girişi</a>
                     </div>
 
-                     <div class="col-xs-2 sepet">
+                     <div class="col-sm-2 sepet">
                         <div class="dropdown">
-                            <button onclick="show_hide()" class="dropdown-buton"><img
+                            <button class="dropdown-buton">
+                                <img
                                     src="../assets/images/banner/red_basket_icon.png" alt="">
-                                <span>{{ total }} TL</span>
                             </button>
 
-                            <div id="drop-content" style="display: none;">
-                                <a href="#">Alışveriş sepetinizde hiç ürün bulunmamaktadır.</a>
-                            </div>
                         </div>
                     </div> 
                 </div>
@@ -128,63 +125,18 @@ export default {
     cursor: pointer;
     background: transparent;
     border: 0px;
-    height: 37px;
+    padding: 5px 10px;
 }
 
 .dropdown-buton:hover{
-    margin-left: -30px;
     cursor: pointer;
-    background: #fff;
+    background: transparent;
     border: 0px;
-    margin-top: 100px;
-    width: 160px;
-    height: 37px;
 }
 
 .dropdown-buton img{
-    margin-top: 6px;
-    margin-left: -11px;
     width: 25px;
 }
-
-#drop-content{
-    position: absolute;
-    z-index: 1;
-}
-
-#drop-content a{
-    cursor: text;
-    margin-top: -2px;
-    margin-left: -350px ;
-    display: block;
-    font-weight: bold;
-    font-size: 17px;
-    background: #fff;
-    color: black;
-    text-decoration: none;
-    padding: 30px 90px;
-}
-
-.dropdown span{
-    color: rgb(213, 50, 53);
-    line-height: 18px;
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: -10px;
-    margin-left: 20px;
-    text-align: center;
-}
-
-.dropdown span:hover{
-    color: black;
-    line-height: 18px;
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: -10px;
-    margin-left: 20px;
-    text-align: center;
-}
-
 .bottom-banner{
     background: url(../assets/images/banner/nav_bg.png);
 }
@@ -193,13 +145,11 @@ export default {
 }
 .arama-bar{
     position: absolute;
-    right: 30px;
+    right: 100px;
     top:50px;
-    /* display: grid;
-    grid-template-columns: 3fr 1fr; */
 }
 .bar input{
-    width: 230px;
+    width: 180px;
     height: 27px;
     border: 1px solid #eee;
     background: url(../assets/images/banner/search_input_bg.png);
@@ -220,188 +170,5 @@ export default {
     max-width: 100%;
     width: 15px;
     height: 15px;
-}
-.kategoriler{
-   
-}
-.anasayfa{
-   
-    background: url(../assets/images/banner/kategori/anasayfa.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    height: 50px;
-    width: 65px;
-}
-
-.ciftlik{
-
-    background: url(../assets/images/banner/kategori/ciftlik.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 45px;
-}
-
-.tum-urunler{
-
-    
-    background: url(../assets/images/banner/kategori/tum-urunler.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 80px;
-}
-
-.domates-biber{
-
-    background: url(../assets/images/banner/kategori/domates-biber.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 100px;
-}
-
-.sut-peynir{
-
-    background: url(../assets/images/banner/kategori/sut-peynir.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 70px;
-}
-
-.yumurta-sucuk{
-    background: url(../assets/images/banner/kategori/yumurta.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 100px;
-}
-
-.salca-tursu{
-
-    background: url(../assets/images/banner/kategori/salca-tursu.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 90px;
-}
-
-.zeytin-zeytinyagi{
-
-    background: url(../assets/images/banner/kategori/zeytin-zeytinyagi.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 120px;
-}
-
-.recel-bal{
-
-    background: url(../assets/images/banner/kategori/recel-bal.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 80px;
-}
-
-
-.anasayfa:hover{
-   
-    background: url(../assets/images/banner/kategori/anasayfa-1.png) no-repeat center;
-    background-size: contain;
-    background-position: center;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 65px;
-}
-
-.ciftlik:hover{
-
-    background: url(../assets/images/banner/kategori/ciftlik-1.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    height: 50px;
-    width: 45px;
-    max-width:100%
-}
-
-.tum-urunler:hover{
-
-    
-    background: url(../assets/images/banner/kategori/tum-urunler-1.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 80px;
-}
-
-.domates-biber:hover{
-
-    background: url(../assets/images/banner/kategori/domates-biber-1.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 100px;
-}
-
-.sut-peynir:hover{
-
-    background: url(../assets/images/banner/kategori/sut-peynir-1.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 70px;
-}
-
-.yumurta-sucuk:hover{
-    background: url(../assets/images/banner/kategori/yumurta-1.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 100px;
-}
-
-.salca-tursu:hover{
-
-    background: url(../assets/images/banner/kategori/salca-tursu-1.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 90px;
-}
-
-.zeytin-zeytinyagi:hover{
-
-    background: url(../assets/images/banner/kategori/zeytin-zeytinyagi-1.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 120px;
-}
-
-.recel-bal:hover{
-
-    background: url(../assets/images/banner/kategori/recel-bal-1.png) no-repeat center;
-    background-size: contain;
-    background-color: transparent;
-    max-width: 100%;
-    height: 50px;
-    width: 80px;
 }
 </style>
