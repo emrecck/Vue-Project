@@ -149,7 +149,7 @@ export default {
   background-color: transparent;
   max-width: 100%;
   height: 50px;
-  width: 80px;
+  width: 50px;
 }
 
 .anasayfa:hover {
@@ -250,6 +250,6 @@ export default {
   background-color: transparent;
   max-width: 100%;
   height: 50px;
-  width: 80px;
+  width: 50px;
 }
 </style>
