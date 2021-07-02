@@ -91,17 +91,6 @@
           <span class="col-sm-1">*</span>
         </div>
       </div>
-
-      <div class="inputs row">
-        <input type="checkbox" />
-        <label>Beni üye yap</label>
-      </div>
-
-      <div class="inputs row">
-        <input type="checkbox" value="true" />
-        <input type="hidden" value="false" />
-        <label>Fatura adresim ile sevk adresim aynı</label>
-      </div>
     </div>
   </div>
 </template>
