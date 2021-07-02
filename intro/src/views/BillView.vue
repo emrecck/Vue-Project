@@ -9,6 +9,9 @@
           <Bill2/>
         </div>
       </div>
+      <div class="col-md-12 p-5 text-white " style="background-color:green; height = 100px; font-weight: bold; font-size: 24px;">
+        something else...
+      </div>
     </div>
     
   </div>
