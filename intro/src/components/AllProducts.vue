@@ -1,38 +1,29 @@
 <template>
   <div class="products col-sm-12">
     <div class="row">
-      <div
-        class="col-sm-3 px-0 p-2"
-        v-for="productItem in product"
-        v-bind:key="productItem.id"
-      >
+      <div class="col-sm-4 px-0 p-2" v-for="pitem in product" v-bind:key="pitem.id">
         <div class="col-sm-12 p-3 border-layer">
           <div class="col-sm-12 px-0 urun">
             <div class="col-sm-12 p-0">
               <a href="#">
-                <router-link to="/product"
-                  ><img
-                    @click="addProductItem(productItem)"
-                    class="urun-img"
-                    v-bind:src="productItem.imgSource"
-                /></router-link >
+                <router-link to="/product"><img @click="addProductItem(pitem)" class="urun-img" v-bind:src="pitem.imgSource" /></router-link>
               </a>
             </div>
 
             <div class="col-sm-12 pt-3 px-0">
-              <h3 class="urun-isim text-left">{{ productItem.name }}</h3>
-              <h5 class="urun-alt-isim text-left">{{ productItem.subName }}</h5>
+              <h3 class="urun-isim text-left cursor">{{ pitem.name.substr(0,30) }}...</h3>
+              <h5 class="urun-alt-isim text-left">{{ pitem.subName }}</h5>
             </div>
 
             <div class="fiyat-at-sepete clearfix">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3 class="urun-fiyat text-left">{{ productItem.cost }} TL</h3>
+                  <h3 class="urun-fiyat text-left">{{ pitem.cost }} TL</h3>
                 </div>
 
-                <button @click="addItem(productItem)" class="col-sm-6 at-sepete-buton">
+                <button @click="addItem(pitem)" class="col-sm-6 at-sepete-buton">
                   <!-- <a class="col-sm-6 at-sepete-buton"> -->
-                  <img src="../assets/images/banner/at_sepete_sprite.png" />
+                    <img src="../assets/images/banner/at_sepete_sprite.png" />
                   <!-- </a> -->
                 </button>
               </div>
@@ -45,54 +36,42 @@
 </template>
 
 <script>
+
 export default {
   name: "Products",
   props: {},
-  computed: {
-    product() {
-      if (this.$store.state.filteredList.length > 0){
-        return this.$store.state.filteredList;
+  computed:{
+    product(){
+      if ( this.$store.state.filteredCategory.length > 0){
+        return this.$store.state.filteredCategory
       }else{
-        return this.$store.state.productList;
-      }  
-    }
+        debugger
+        return this.$store.state.allProductList
+      }
+      
+    },
   },
   methods: {
-    addItem(item) {
-      // this.$alert("Ürününüz sepete eklendi.");
-      this.$store.commit("add", item);
+    addItem(item){
+      this.$store.commit('add', item);
     },
-    addAllProduct(product) {
-      this.$store.commit("addAllProduct", product);
+    updateProduct(product){
+      this.$store.dispatch('updateProducts',product)
     },
-    addProductItem(productItem) {
-      this.$store.commit("addProductItem", productItem);
+    addProductItem(productItem){
+      this.$store.commit('addProductItem',productItem)
     },
-  }
-  
-  // created() {
-  //   axios
-  //     .get("https://nuxt-js-79077-default-rtdb.firebaseio.com/products.json")
-  //     .then((response) => {
-  //       let data = response.data;
-  //       let list = [];
-  //       let temp = "";
-  //       for (let key in data) {
-  //         temp = {
-  //           ...data[key],
-  //           imgSource: this.image[key].imgSource,
-  //           quantity: 1,
-  //         };
-  //         list.push(temp);
-  //       }
-  //       this.addAllProduct(list);
-  //     });
-  // },
+
+  },
 };
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.cursor:hover{
+  cursor:pointer;
+}
 img {
   max-width: 100%;
   width: 100%;
@@ -117,7 +96,7 @@ img {
 .at-sepete-buton {
   cursor: pointer;
   border: none;
-  outline: none;
+  outline:none;
   background-color: transparent;
 }
 .at-sepete-buton img {
@@ -133,6 +112,11 @@ img {
     border: 0px;
     background-color: transparent;
 } */
+
+.at-sepete-button img {
+  /* height: 36px;
+    width: 115px; */
+}
 
 .at-sepete-buton:active,
 .at-sepete-buton:focus {

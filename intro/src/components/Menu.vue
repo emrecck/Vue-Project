@@ -1,112 +1,166 @@
 <template>
-  <body>
-    <div class="tum-urunler-main">
-      <div>
-        <div>
-          <ul class="side_category_menu">
-            <li v-for="item in list" v-bind:key="item.id"><a href="#">{{ item.name }}</a></li>
-            <!-- <li><a href="#">Tüm Ürünler</a></li>
-            <li><a href="#">Sebze & Meyve</a></li>
-            <li><a href="#">Süt & Peynir</a></li>
-            <li><a href="#">Yumurta & Sucuk</a></li>
-            <li><a href="#">Salça & Turşu</a></li>
-            <li><a href="#">Zeytin & Zeytinyağı</a></li>
-            <li><a href="#">Reçel & Bal</a></li>
-            <li><a href="#">Sebzeler</a></li>
-            <li><a href="#">Ekmek</a></li>
-            <li><a href="#">Meyveler</a></li>
-            <li><a href="#">Hediye Paketleri</a></li>
-            <li><a href="#">Paketler</a></li> -->
-          </ul>
-        </div>
-      </div>
+  <div class="tum-urunler-main col-sm-12 px-0">
+    <div class="col-sm-12">
+      <ul id="side_category_menu" class="side_category_menu col-sm-12">
+        <li :id="listItem.id" class="list-item" v-for="listItem in list" v-bind:key="listItem.id">
+          <router-link to="/allproducts" v-if="listItem.id == 1"><span @click="toggle(listItem)"  class="item-name active">{{ listItem.name }}</span></router-link>
+          <router-link to="/allproducts" v-else ><span @click="toggle(listItem)" class="item-name"> {{ listItem.name }} </span></router-link>
+          <span v-if="listItem.show">
+            <div
+              v-for="subItem in listItem.subList"
+              v-bind:key="subItem.id"
+              class="pl-5 sub-item"
+            >
+                <router-link to="/allproducts">
+                  <span @click="filter(subItem.name)" class="sub-item">{{ subItem.name }}</span>
+                </router-link>
+            </div>
+          </span>
+        </li>
+      </ul>
     </div>
-  </body>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "Navbar",
+  name: "Menu",
   props: {},
   data() {
-    return{
-      list:[
+    return {
+      list: [
         {
-          id:0,
-          name:"Aile Boyu"
+          id: 0,
+          name: "Aile Boyu",
+          show: false,
+          active:false
         },
         {
-          id:1,
-          name:"Tüm Ürünler"
+          id: 1,
+          name: "Tüm Ürünler",
+          show: false,
+          active:true
         },
         {
-          id:2,
-          name:"Sebze & Meyve"
+          id: 2,
+          name: "Sebze & Meyve",
+          show: false,
+          active:false,
+          subList: [
+            {
+              id: 0,
+              name: "Biber",
+            },
+            {
+              id: 1,
+              name: "Domates",
+            },
+          ],
         },
         {
-          id:3,
-          name:"Süt & Peynir"
+          id: 3,
+          name: "Süt & Peynir",
+          show: false,
+          active:false,
+          subList: [
+            {
+              id: 0,
+              name: "Süt",
+            },
+            {
+              id: 1,
+              name: "Peynir",
+            },
+          ],
         },
         {
-          id:4,
-          name:"Yumurta & Sucuk"
+          id: 4,
+          name: "Yumurta & Sucuk",
+          show: false,
+          active:false
         },
         {
-          id:5,
-          name:"Salça & Turşu"
+          id: 5,
+          name: "Salça & Turşu",
+          show: false,
+          active:false
         },
         {
-          id:6,
-          name:"Zeytin & Zeytinyağı"
+          id: 6,
+          name: "Zeytin & Zeytinyağı",
+          show: false,
+          active:false
         },
         {
-          id:7,
-          name:"Reçel & Bal"
+          id: 7,
+          name: "Reçel & Bal",
+          show: false,
+          active:false
         },
         {
-          id:8,
-          name:"Sebzeler"
+          id: 8,
+          name: "Sebzeler",
+          show: false,
+          active:false
         },
         {
-          id:9,
-          name:"Ekmek"
+          id: 9,
+          name: "Ekmek",
+          show: false,
+          active:false
         },
-        
+
         {
-          id:10,
-          name:"Meyveler"
+          id: 10,
+          name: "Meyveler",
+          show: false,
+          active:false
         },
         {
-          id:11,
-          name:"Hediye Paketleri"
+          id: 11,
+          name: "Hediye Paketleri",
+          show: false,
+          active:false
         },
         {
-          id:12,
-          name:"Paketler"
-        }
-      ]
+          id: 12,
+          name: "Paketler",
+          show: false,
+          active:false
+        },
+      ],
+    };
+  },
+  methods: {
+    toggle: function (item) {
+      this.filter(item.name);
+      item.active = !item.active;
+      item.show = !item.show;
+      //var liContainer = document.getElementById("side_category_menu");
+      var lis = document.getElementsByClassName("list-item");
+      for (var i = 0; i < lis.length; i++) {
+        lis[i].addEventListener("click",function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.getElementsByClassName("item-name")[0].className += " active";
+        })
+      }
+    },
+    filter(category){
+      this.$store.commit("filterCategory",category)
     }
-  }
+  },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .side_category_menu {
-  margin-left: 10px;
   padding: 70px 20px 20px 20px;
   background: url(../assets/images/tum-urunler/side_pattern.png);
   position: relative;
-  width: 280px;
-  height: 735px;
   text-align: left;
 }
-
-.side_category_menu li {
-  margin-bottom: 0;
-  list-style-type: none;
-}
-
 .side_category_menu:before {
   background: url(../assets/images/tum-urunler/urunlerimiz_tabela.png) no-repeat;
   content: "";
@@ -114,13 +168,16 @@ export default {
   width: 500px;
   height: 66px;
   position: absolute;
-  left: 6px;
+  left: -6px;
   top: -8px;
 }
-
+.side_category_menu li {
+  margin-bottom: 0;
+  list-style-type: none;
+}
 .side_category_menu li:after {
   content: "";
-  width: 240px;
+  width: 100%;
   height: 3px;
   background: url(../assets/images/tum-urunler/side_item_border.png) no-repeat;
   display: block;
@@ -140,20 +197,14 @@ export default {
 .side_category_menu li a:hover {
   color: #738638;
 }
-
-body {
-  line-height: 1.42857143;
-  font-family: kg_turning_tablesregular, sans-serif;
+.side_category_menu li span.active,.sub-item{
+  color: #738638;
 }
-
-.product-top {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.product-list-top img {
-  width: 100%x;
-  margin-left: -70px;
-  margin-top: 20px;
+.sub-item {
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  font-size: 19px;
 }
 </style>

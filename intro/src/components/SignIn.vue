@@ -4,15 +4,15 @@
       <div class="hosgeldiniz">
         <h1 class="login-text">HOŞ GELDİNİZ. LÜTFEN GİRİŞ YAPINIZ !</h1>
         <div class="page-body">
-          <form id="myform2">
+          <form id="myform2" @submit.prevent="login">
             <div class="email">
               <label for="Email">E-Posta:</label>
-              <input type="text" required />
+              <input id="Email" type="text" v:model="account.email" required />
               <!-- <span class="required-3">*</span> -->
             </div>
             <div class="sifre">
               <label for="Password">Şifre:</label>
-              <input type="password" required />
+              <input id="Password" type="password" v:model="account.password" required />
             </div>
             <div class="beni-hatırla clearfix py-5">
               <input
@@ -37,13 +37,16 @@
                 form="myform2"
               />
             </div>
+            <div class="uye-olun col-sm-12">
+              <span class="px-5">Henüz Üye Değilim?</span>
+              <a href="uye-olun-page.html">
+                <input type="submit" class="uye-olun-buton" value="Üye Olun" />
+              </a>
+            </div>
           </form>
         </div>
-        <div class="uye-olun col-sm-12">
-          <span class="px-5">Henüz Üye Değilim?</span>
-          <a href="uye-olun-page.html">
-            <input type="button" class="uye-olun-buton" value="Üye Olun" />
-          </a>
+        <div v-if="isError" class="alert alert-danger">
+          <p class="">{{ errMsg }}</p>
         </div>
       </div>
     </div>
@@ -54,6 +57,29 @@
 export default {
   name: "SignIn",
   props: {},
+  data() {
+    return {
+      account : {
+        email: "",
+        password: "",
+      },
+      isError:false,
+      errMsg: ''
+    };
+  },
+  methods: {
+    login(){
+      // this.$store.dispatch('users/login',this.account).catch(error => {
+      //   this.isError = true;
+      //   this.errMsg = error.code;
+      //   setTimeout(() => {
+      //     this.isError = false;
+      //   },5000)
+      // });
+
+      // //this.$router.push("/admin");
+    }
+  },
 };
 </script>
 
@@ -68,7 +94,7 @@ export default {
 .hosgeldiniz {
   width: 500px;
   padding: 50px 80px 160px 80px;
-  margin: 150px 0 180px 0; 
+  margin: 150px 0 180px 0;
   background-color: #fff;
   display: inline-block;
   position: relative;
@@ -77,6 +103,7 @@ export default {
 .login-text {
   color: #b76f3b;
   font-size: 2.5rem;
+  font-weight: 600;
   position: absolute;
   top: -50px;
   text-align: center;

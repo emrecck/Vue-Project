@@ -1,21 +1,17 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">BillView</router-link> |
-      <router-link to="/cartview">CartView</router-link> |
-      <router-link to="/signinview">SignInView</router-link> |
-      <router-link to="/signupview">SignUpView</router-link> |
-      <router-link to="/sliderview">SliderView</router-link> |
-      <router-link to="/headerview">HeaderView</router-link> |
-      <router-link to="/productsview">ProductsView</router-link> |
-      <router-link to="/productview">ProductView</router-link> |
-      <router-link to="/menuview">MenuView</router-link> |
-      <router-link to="/navbarview">NavbarView</router-link>
-    </div>
+    <Header></Header>
     <router-view />
   </div>
 </template>
-
+<script>
+import Header from './components/Header.vue'
+export default {
+  components:{
+    Header
+  }
+}
+</script>
 <style>
 * {
   box-sizing: border-box;

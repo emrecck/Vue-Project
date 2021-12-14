@@ -1,38 +1,38 @@
 <template>
   <div class="col-sm-12 banner px-0">
-    <div class="bottom-banner col-sm-12">
-      <nav class="kategoriler col-sm-12">
+    <div class="col-sm-12 my-2">
+      <nav>
         <div class="container">
-          <ul class="nav d-flex justify-content-around col-sm-12 my-2">
+          <ul class="nav d-flex justify-content-around col-sm-12 ">
             <li class="nav-items">
-              <a class="" href="#"><div class="anasayfa"></div></a>
+              <router-link to="/"><div class="anasayfa"></div></router-link>
             </li>
             <li class="nav-items mt-2">
-              <a class="" href="#"><div class="ciftlik"></div></a>
+              <router-link to="/"><div class="ciftlik"></div></router-link>
             </li>
-            <li class="nav-items mt-2">
-              <a class="" href="#"><div class="tum-urunler"></div></a>
+            <li class="nav-items mt-2" @click="filter('')">
+              <router-link to="/allproducts"><div class="tum-urunler"></div></router-link>
             </li>
-            <li class="nav-items mt-2">
-              <a class="" href="#"><div class="domates-biber"></div></a>
+            <li class="nav-items mt-2" @click="filter('Sebzeler')">
+              <router-link to="/allproducts" ><div class="domates-biber"></div></router-link>
             </li>
-            <li class="nav-items mt-2">
-              <a class="" href="#"><div class="sut-peynir"></div></a>
+            <li class="nav-items mt-2" @click="filter('Süt')">
+              <router-link to="/allproducts"><div class="sut-peynir"></div></router-link>
             </li>
-            <li class="nav-items mt-2">
-              <a class="" href="#"><div class="yumurta-sucuk"></div></a>
+            <li class="nav-items mt-2" @click="filter('Yumurta & Sucuk')">
+              <router-link to="/allproducts"><div class="yumurta-sucuk"></div></router-link>
             </li>
-            <li class="nav-items mt-2">
-              <a class="" href="#"><div class="salca-tursu"></div></a>
+            <li class="nav-items mt-2" @click="filter('Salça & Turşu')">
+              <router-link to="/allproducts"><div class="salca-tursu"></div></router-link>
             </li>
-            <li class="nav-items mt-2">
-              <a class="" href="#"><div class="zeytin-zeytinyagi"></div></a>
+            <li class="nav-items mt-2" @click="filter('Zeytin & Zeytinyağı')">
+              <router-link to="/allproducts"><div class="zeytin-zeytinyagi"></div></router-link>
             </li>
-            <li class="nav-items mt-2">
-              <a class="" href="#"><div class="recel-bal"></div></a>
+            <li class="nav-items mt-2" @click="filter('Reçel & Bal')">
+              <router-link to="/allproducts"><div class="recel-bal"></div></router-link>
             </li>
-            <li class="nav-items mt-2">
-              <a class="" href="#"><div class="ekmek"></div></a>
+            <li class="nav-items mt-2" @click="filter('Ekmek')"> 
+              <router-link to="/allproducts"><div class="ekmek"></div></router-link>
             </li>
           </ul>
         </div>
@@ -45,11 +45,20 @@
 export default {
   name: "Navbar",
   props: {},
+  methods: {
+      filter(category){
+      this.$store.commit("filterCategory",category)
+    }
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+ <!-- background-color: #E64452; -->
 <style scoped>
+.container{
+  max-width: 1140px;
+}
 .bottom-banner {
   background: url(../assets/images/banner/nav_bg.png);
 }
