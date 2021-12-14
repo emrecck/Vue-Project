@@ -248,8 +248,7 @@ export default new Vuex.Store({
       state.filteredList = state.productList.filter((item) =>
       item.name.toLowerCase().includes(search.toLowerCase())
       )
-    },
-    
+    }
   },
   actions: {
   },
